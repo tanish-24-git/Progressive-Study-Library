@@ -4,7 +4,7 @@ import { absoluteUrl } from "@/lib/site-url";
 // /llms.txt: a plain-text summary for AI assistants and answer engines
 // (see llmstxt.org). Built from the same content as the site, at build time.
 export function GET() {
-  const body = `# ${site.name} (${site.marathiName})
+  const body = `# ${site.name}
 
 > ${site.description}
 

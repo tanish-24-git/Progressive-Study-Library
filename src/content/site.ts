@@ -3,9 +3,8 @@ import { photos, type Photo } from "./images";
 // Everything a visitor reads lives here. Keep it to facts about the library.
 
 export const site = {
-  name: "Ekagra Library",
-  fullName: "Ekagra Library",
-  marathiName: "एकाग्र अभ्यासिका",
+  name: "Progressive Study Library",
+  fullName: "Progressive Study Library",
   description:
     "Peaceful study library (abhyasika) in Lohegaon, Pune for UPSC, MPSC, NEET and JEE students. Open 7 days, 8 am to 9 pm. Wi-Fi, CCTV, parking, reserved desks.",
   area: "Lohegaon",
@@ -96,8 +95,8 @@ export const day: DayMoment[] = [
 
 export const faqs: { q: string; a: string }[] = [
   {
-    q: "Where is Ekagra Library?",
-    a: `Ekagra Library is a study library in ${site.area}, ${site.city}: ${site.address.join(", ")}.`,
+    q: `Where is ${site.name}?`,
+    a: `${site.name} is a study library in ${site.area}, ${site.city}: ${site.address.join(", ")}.`,
   },
   { q: "What are the timings?", a: `Every day, ${site.hours}.` },
   { q: "Are you open on Sundays and holidays?", a: "Yes. The library is open all 7 days of the week, with no holidays." },

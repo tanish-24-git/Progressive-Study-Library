@@ -22,5 +22,5 @@ export async function GET() {
   ];
 
   const today = new Date().toISOString().slice(0, 10);
-  return xlsxResponse(await workbook("Enquiries", columns, enquiries), `ekagra-enquiries-${today}.xlsx`);
+  return xlsxResponse(await workbook("Enquiries", columns, enquiries), `progressive-enquiries-${today}.xlsx`);
 }

@@ -1,5 +1,5 @@
 /**
- * Ekagra Library: send Google Form responses to the website.
+ * Progressive Study Library: send Google Form responses to the website.
  *
  * Paste this into each form (registration and payment):
  *   1. Open the form > ⋮ (More) > Apps Script. Replace everything with this file.
@@ -75,6 +75,6 @@ function post(payload) {
     muteHttpExceptions: true,
   });
   if (res.getResponseCode() >= 300) {
-    console.error("Ekagra Library: " + payload.kind + " failed (" + res.getResponseCode() + "): " + res.getContentText());
+    console.error("Progressive Study Library: " + payload.kind + " failed (" + res.getResponseCode() + "): " + res.getContentText());
   }
 }

@@ -52,5 +52,5 @@ export async function GET() {
   ];
 
   const rows = [...students].sort((a, b) => a.fullName.localeCompare(b.fullName));
-  return xlsxResponse(await workbook("Students", columns, rows), `ekagra-students-${today}.xlsx`);
+  return xlsxResponse(await workbook("Students", columns, rows), `progressive-students-${today}.xlsx`);
 }

@@ -1,7 +1,7 @@
 import type { Photo } from "./images";
 import imported from "./gallery-photos.json";
 
-// Photos and video of Ekagra Library itself.
+// Photos and video of Progressive Study Library itself.
 // To add photos: put them in photos-inbox/, run `npm run photos:import`,
 // then give each new file a caption in `details` below.
 
@@ -15,19 +15,19 @@ type Detail = { caption: string; alt: string };
 const details: Record<string, Detail> = {
   "/images/gallery/students-at-wall-desks.jpg": {
     caption: "Students at the wall desks",
-    alt: "Students studying at wooden desks along a white wall in the reading hall of Ekagra Library, Lohegaon",
+    alt: "Students studying at wooden desks along a white wall in the reading hall of Progressive Study Library, Lohegaon",
   },
   "/images/gallery/desks-by-the-windows.jpg": {
     caption: "Desks by the windows",
-    alt: "A row of wooden study desks and chairs beneath bright windows at Ekagra Library, Lohegaon",
+    alt: "A row of wooden study desks and chairs beneath bright windows at Progressive Study Library, Lohegaon",
   },
   "/images/gallery/hall-corner.jpg": {
     caption: "A corner of the hall",
-    alt: "Study desks in a corner of the Ekagra Library hall with a ceiling fan overhead",
+    alt: "Study desks in a corner of the Progressive Study Library hall with a ceiling fan overhead",
   },
   "/images/gallery/reading-hall-long-view.jpg": {
     caption: "Looking down the hall",
-    alt: "A long view of the Ekagra Library reading hall with study desks along both walls",
+    alt: "A long view of the Progressive Study Library reading hall with study desks along both walls",
   },
 };
 
@@ -39,13 +39,13 @@ const photos: GalleryItem[] = [...imported]
   .map((p) => ({
     kind: "image",
     id: p.src,
-    caption: details[p.src]?.caption ?? "Ekagra Library",
+    caption: details[p.src]?.caption ?? "Progressive Study Library",
     photo: {
       src: p.src,
       width: p.width,
       height: p.height,
-      alt: details[p.src]?.alt ?? "Inside Ekagra Library, a study library in Lohegaon, Pune",
-      credit: { author: "Ekagra Library", license: "All rights reserved", source: "" },
+      alt: details[p.src]?.alt ?? "Inside Progressive Study Library, a study library in Lohegaon, Pune",
+      credit: { author: "Progressive Study Library", license: "All rights reserved", source: "" },
     },
   }));
 
@@ -57,7 +57,7 @@ const walkthrough: GalleryItem = {
   poster: "/images/gallery/reading-hall-walkthrough-poster.jpg",
   width: 360,
   height: 640,
-  alt: "A short video walking through the Ekagra Library reading hall in Lohegaon, past students at their desks",
+  alt: "A short video walking through the Progressive Study Library reading hall in Lohegaon, past students at their desks",
 };
 
 export const gallery: GalleryItem[] = [walkthrough, ...photos];

@@ -1,5 +1,6 @@
 import "server-only";
 import ExcelJS from "exceljs";
+import { site } from "@/content/site";
 
 // Builds an .xlsx with one sheet in a standard layout: a bold, yellow, frozen
 // header row with filters, thin borders, sensible column widths, real dates
@@ -17,7 +18,7 @@ const border = { top: thin, left: thin, bottom: thin, right: thin };
 
 export async function workbook<Row>(sheetName: string, columns: Column<Row>[], rows: Row[]): Promise<ArrayBuffer> {
   const book = new ExcelJS.Workbook();
-  book.creator = "Ekagra Library";
+  book.creator = site.name;
   book.created = new Date();
   const sheet = book.addWorksheet(sheetName, { views: [{ state: "frozen", ySplit: 1 }] });
 

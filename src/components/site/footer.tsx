@@ -50,9 +50,6 @@ export function Footer() {
         <div className="mt-8 flex flex-col gap-3 border-t border-ink/15 pt-6 text-caption text-ink/75 md:flex-row md:justify-between">
           <span>
             © {site.copyrightYear} {site.fullName}
-            <span lang="mr" className="ml-3">
-              {site.marathiName}
-            </span>
             <span className="mt-1 block md:mt-0 md:ml-3 md:inline">
               Study library in {site.area}, {site.city} for UPSC, MPSC, NEET and JEE.
             </span>

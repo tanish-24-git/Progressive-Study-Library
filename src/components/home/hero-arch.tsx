@@ -57,12 +57,7 @@ export function HeroArch() {
               <p className="font-display text-[clamp(3.5rem,11vw,10.5rem)] leading-[0.92] tracking-[-0.02em] text-paper">
                 {site.name}
               </p>
-              <div className="mt-5 flex flex-col gap-1 text-linen/90 md:flex-row md:items-baseline md:gap-8">
-                <span lang="mr" className="font-display text-h4">
-                  {site.marathiName}
-                </span>
-                <span className="text-body">Ekagra: a mind held on one thing.</span>
-              </div>
+              <p className="mt-5 text-body text-linen/90">Progress, one quiet hour at a time.</p>
             </motion.div>
           )}
         </div>

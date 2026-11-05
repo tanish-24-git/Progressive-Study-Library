@@ -1,6 +1,6 @@
-# Ekagra Library
+# Progressive Study Library
 
-Website and admin for Ekagra Library (एकाग्र अभ्यासिका), a study library in Lohegaon, Pune.
+Website and admin for Progressive Study Library, a study library in Lohegaon, Pune.
 
 - **Public site:** homepage and gallery.
 - **Admin:** students, fee status, desk reservations and enquiries from the website form.
@@ -137,7 +137,7 @@ Scheduling: `vercel.json` sets this up on Vercel (set `CRON_SECRET` there and Ve
 4. In the Neon console → Auth, add the live address to the trusted domains.
 5. Your admin password lives in Neon Auth, so it's the same locally and live. `DOCUMENTS_KEY` must stay identical everywhere, or saved ID numbers and documents can't be read.
 
-Daily fee reminders run by themselves (`vercel.json`, 9:00 IST). A step-by-step guide for Gmail, WhatsApp, Google Forms and Vercel is kept outside the repository (`docs/Ekagra-Library-setup-guide.pdf` on the owner's computer).
+Daily fee reminders run by themselves (`vercel.json`, 9:00 IST). A step-by-step guide for Gmail, WhatsApp, Google Forms and Vercel is kept outside the repository (`docs/Progressive-Study-Library-setup-guide.pdf` on the owner's computer).
 
 ## Google Forms sync
 
